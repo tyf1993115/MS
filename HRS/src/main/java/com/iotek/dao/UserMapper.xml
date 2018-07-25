@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.iotek.dao.UserMapper">
+    <insert id="savaRegisUser" parameterType="com.iotek.model.User">
+        INSERT INTO T_USER (T_ID, T_NAME, T_PASS) VALUE (T_USER_SEQ.nextval,#{name},#{pass})
+    </insert>
+    <select id="getUser" parameterType="com.iotek.model.User" resultType="com.iotek.model.User">
+        select * from T_USER  where T_NAME=#{name} and T_PASS=#{pass}
+    </select>
+
+</mapper>
