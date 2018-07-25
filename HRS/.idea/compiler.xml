@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="HRS" target="1.7" />
+      <module name="HRS" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
